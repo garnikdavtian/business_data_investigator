@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+data/history.sqlite*
+# local tool output
+docs/architecture.json
+.archify/
+.claude/settings.local.json
+.DS_Store

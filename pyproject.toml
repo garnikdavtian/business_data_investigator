@@ -1,0 +1,25 @@
+[project]
+name = "data-investigator"
+version = "0.1.0"
+description = "Bounded LLM investigator for a fictional sales database"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.142.2",
+    "langchain-openai>=1.6.7",
+    "langgraph>=1.2.14",
+    "openai>=3.24.0",
+    "uvicorn>=0.54.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
+
+[tool.ruff]
+line-length = 120
